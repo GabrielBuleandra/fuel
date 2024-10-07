@@ -1,0 +1,37 @@
+<header class="px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
+    <div class="flex items-center gap-4">
+      <a href="/">
+        <img src={~p"/images/Fuel.webp"} width="48" alt="Fuel Logo" />
+      </a>
+      <p class="bg-crimsonRed/5 text-crimsonRed rounded-full px-2 font-medium leading-6">
+        Fitness & Nutrition App
+      </p>
+    </div>
+    <div class="flex items-center gap-4 font-semibold leading-6 text-darkGray">
+      <a href="/nutrition" class="hover:text-lessDarkGray">
+        Nutrition Plans
+      </a>
+      <a href="/workouts" class="hover:text-lessDarkGray">
+        CrossFit Workouts
+      </a>
+      <a href="/get-started" class="rounded-lg bg-darkGray px-2 py-1 hover:bg-lessDarkGray">
+        Get Started <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <.flash_group flash={@flash} />
+    <h1 class="text-4xl font-bold text-darkGray mb-4">Welcome to FU3L</h1>
+    <p class="text-lg text-lessDarkGray">
+      Your ultimate companion for CrossFit workouts and nutrition plans to fuel your energy and fitness journey.
+    </p>
+    <a href="/get-started" class="mt-6 inline-block bg-crimsonRed text-white py-2 px-4 rounded">
+      Get Started Today
+    </a>
+    <%= @inner_content %>
+  </div>
+</main>

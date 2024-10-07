@@ -1,0 +1,46 @@
+<.flash_group flash={@flash} />
+
+<div class="flex min-h-screen items-center justify-center bg-white px-4 py-10 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-xl text-center">
+    <img src={~p"/images/logo.png"} alt="Fuel Logo" class="h-40 mx-auto mb-8" />
+
+    <h1 class="text-4xl font-bold text-darkGray mb-6">Welcome to FU3L</h1>
+
+    <p class="text-lg text-lessDarkGray mb-8">
+      FU3L is your ultimate fitness and nutrition companion. Whether you're a CrossFit enthusiast or just starting out,
+      we provide personalized nutrition plans and high-intensity workout routines to help you achieve your fitness
+      goals.
+    </p>
+
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <a href="/nutrition"
+        class="group relative rounded-2xl px-6 py-4 text-sm font-semibold leading-6 text-darkGray hover:text-crimsonRed sm:py-6">
+        <span class="absolute inset-0 rounded-2xl bg-gray-100 transition group-hover:bg-gray-200"></span>
+        <span class="relative flex items-center gap-4 sm:flex-col">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6">
+            <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="#FD4F00" />
+          </svg>
+          Nutrition Plans
+        </span>
+      </a>
+
+      <a href="/workouts"
+        class="group relative rounded-2xl px-6 py-4 text-sm font-semibold leading-6 text-darkGray hover:text-crimsonRed sm:py-6">
+        <span class="absolute inset-0 rounded-2xl bg-gray-100 transition group-hover:bg-gray-200"></span>
+        <span class="relative flex items-center gap-4 sm:flex-col">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6">
+            <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="#FD4F00" />
+          </svg>
+          CrossFit Workouts
+        </span>
+      </a>
+    </div>
+
+    <div class="mt-12">
+      <a href="/get-started"
+        class="inline-block bg-crimsonRed text-white py-3 px-6 rounded-full font-semibold hover:bg-crimsonRed/80">
+        Get Started Today
+      </a>
+    </div>
+  </div>
+</div>
